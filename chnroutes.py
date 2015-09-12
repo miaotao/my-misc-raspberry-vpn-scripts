@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+###From: https://github.com/jimmyxu/chnroutes/blob/master/chnroutes.py
+
 import re
 import urllib2
 import sys

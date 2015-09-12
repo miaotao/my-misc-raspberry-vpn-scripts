@@ -2,7 +2,7 @@
 export PATH="/bin:/sbin:/usr/sbin:/usr/bin"
 
 
-server_list=(jp1 hg1 tw4 usd3 hk3)
+server_list=(tw5 jp3 jp1 hg1 tw4 usd3 hk3)
 
 if [ -e /home/pi/vpn/vpn_on.mark ]
 then
@@ -17,7 +17,7 @@ then
 			exit
 		fi
 
-		sleep 120
+		sleep 60 
 	done
 else
 	poff -a

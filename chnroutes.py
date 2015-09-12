@@ -27,7 +27,7 @@ def generate_linux(metric):
     #!/bin/bash
     export PATH="/bin:/sbin:/usr/sbin:/usr/bin"
     
-    OLDGW=`ip route show |grep 'eth' | grep '^default' | sed -e 's/default via \\([^ ]*\\).*/\\1/'`
+    OLDGW=`ip route show |grep 'eth' | grep '^default' | sed -e 's/default via \\([^ ]*\\).*/\\1/' |head -1`
     
     if [ $OLDGW == '' ]; then
         exit 0

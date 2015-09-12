@@ -18,6 +18,8 @@ sudo pptpsetup --create YOUR_NAME --server VPN_SERVER_HERE --username USER_NAME 
 
 #Step 2:
 
+sudo ln -s $PWD/vpn-forward /etc/ppp/ip-up.d/999vpn-forward
+
 ./chnroutes.py -p linux
 
 sudo ln -s $PWD/ip-pre-up /etc/ppp/ip-up.d/999ip-pre-up

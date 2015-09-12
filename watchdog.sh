@@ -2,7 +2,7 @@
 export PATH="/bin:/sbin:/usr/sbin:/usr/bin"
 
 
-server_list=(hk3 jp1 hg1 tw4 usd3)
+server_list=(jp1 hg1 tw4 usd3 hk3)
 
 if [ -e /home/pi/vpn/vpn_on.mark ]
 then

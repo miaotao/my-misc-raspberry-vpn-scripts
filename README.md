@@ -1,8 +1,10 @@
+#Reference
+
 Used chnroutes: https://github.com/jimmyxu/chnroutes/
 
 
 
-Step 1:
+#Step 1:
 
 
 sudo apt-get install pptp-linux
@@ -14,7 +16,7 @@ sudo pptpsetup --create YOUR_NAME --server VPN_SERVER_HERE --username USER_NAME 
 
 
 
-Step 2:
+#Step 2:
 
 ./chnroutes.py -p linux
 
@@ -28,7 +30,7 @@ sudo ln -s $PWD/iptables /etc/network/if-up.d/999iptables
 
 
 
-Step 3:
+#Step 3:
 
 Modify /etc/crontab, at the last line, add:
 
@@ -36,7 +38,7 @@ Modify /etc/crontab, at the last line, add:
 
 
 
-Step 4:
+#Step 4:
 
 Modify watchdog.sh,  use you created server instead.
 
@@ -44,7 +46,7 @@ server_list=(usd3 jp2 tw5)
 
 
 
-Setp 5:
+#Setp 5:
 
 Modify /etc/sysctl.conf
 
@@ -54,7 +56,7 @@ net.ipv4.ip_forward=1
 
 
 
-Step 6:
+#Step 6:
 
 (Optional) Set up dnsmasq
 
